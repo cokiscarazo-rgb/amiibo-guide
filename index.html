@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amiibo图鉴 | 王国之泪 amiibo 掉落查询 | Switch amiibo 游戏查询工具</title>
+    <meta name="description" content="amiibo 图鉴与掉落查询工具，覆盖王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage 等 13 款 Switch 热门游戏。支持按 amiibo、掉落奖励、游戏筛选，一图看懂每天能刷什么。">
+    <meta name="keywords" content="amiibo 图鉴, 王国之泪 amiibo 掉落查询, 旷野之息 amiibo 掉落, 动物森友会 amiibo 卡, Splatoon 3 amiibo 奖励, amiibo 怎么用, amiibo 掉落奖励, Switch amiibo 游戏查询, TOTK amiibo, 鬼神套装 amiibo, 艾波娜 amiibo">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Amiibo图鉴 | 王国之泪 amiibo 掉落查询">
+    <meta property="og:description" content="覆盖 13 款 Switch 热门游戏的 amiibo 掉落与奖励查询工具。支持按游戏、角色、掉落等级筛选，从鬼神套装到滑翔伞布料一查便知。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/games/totk.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amiibo图鉴 | Switch amiibo 掉落查询">
+    <meta name="twitter:description" content="覆盖王国之泪、旷野之息、动物森友会等 13 款 Switch 游戏的 amiibo 掉落与奖励查询工具。">
+    <link rel="canonical" href="./">
+    <link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Amiibo图鉴",
+          "description": "Switch 热门游戏 amiibo 掉落与奖励查询工具，覆盖王国之泪、旷野之息、动物森友会、Splatoon 3 等 13 款游戏。",
+          "url": "./",
+          "inLanguage": "zh-CN"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Amiibo图鉴",
+          "applicationCategory": "GameApplication",
+          "operatingSystem": "Any",
+          "description": "amiibo 掉落查询工具，支持按游戏、角色、掉落等级筛选。收录王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage 等 13 款 Switch 热门游戏。",
+          "url": "./",
+          "inLanguage": "zh-CN",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CNY"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "哪些 Switch 游戏支持 amiibo？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "本图鉴覆盖 13 款 Switch 热门游戏，包括：王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage、马力欧奥德赛、马力欧赛车 8 豪华版、大乱斗 特别版、星之卡比 探索发现、密特罗德 生存恐惧、怪物猎人 Rise、异度神剑 3、上古卷轴 5：天际。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "王国之泪 amiibo 能刷什么？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "王国之泪 amiibo 可掉落滑翔伞布料（如鬼神布料、英杰服布料、黄昏之镜布料等）、武器（黄昏之弓、鬼神大剑等）、装备（鬼神套装、黄昏勇者套装等）和各种材料。不同 amiibo 掉落内容不同，本站可按角色或奖励名称查询。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "amiibo 每天能扫几次？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "通常同一个 amiibo 每天可在同一台主机/同一款游戏中扫描一次。不同 amiibo 卡片或不同 amiibo 会分别计算。如果想刷指定物品，可以在扫描前存档，不满意就读档重试。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "非塞尔达 amiibo 在王国之泪有用吗？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "有用，但用途有限。非塞尔达系列 amiibo（如马力欧、动物森友会等）在王国之泪中通常只掉落随机水果、蘑菇、肉类、鱼类等基础食材，不会掉落塞尔达系列专属的滑翔伞布料、套装或武器。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "动物森友会 amiibo 卡有什么用？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "动物森友会 amiibo 卡可以：1）召唤对应村民到露营地，连续三天邀请可搬入你的岛屿；2）在拍照模式（Photopia）中邀请拍照；3）NPC 卡可获得对应角色海报和主题家具；4）三丽鸥联动卡可解锁联动村民和主题家具套装。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Splatoon 3 amiibo 奖励是什么？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Splatoon 3 amiibo 奖励主要为：1）对应主题装备套装（如鱿鱼丝带套装、章鱼迷彩套装、Deep Cut 主题装备等）；2）保存和读取穿搭方案功能；3）偶像角色（鱿鱼姐妹、Off the Hook、Deep Cut）amiibo 有额外的舞台演出道具。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "这个网站的数据来源可靠吗？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "本站数据优先参考 Nintendo 官方说明，并交叉核验 Game8、Nintendo Life、Gamer Guides、Thonky、Nookipedia、Inkipedia、Serenes Forest 等权威攻略来源。王国之泪数据为高置信度，其他游戏数据标注了置信度等级。最后核验日期为 2026-05-15。"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Switch amiibo 游戏覆盖列表",
+          "description": "本站收录的 13 款 Switch 热门游戏 amiibo 支持信息",
+          "numberOfItems": 13,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "塞尔达传说：王国之泪" },
+            { "@type": "ListItem", "position": 2, "name": "塞尔达传说：旷野之息" },
+            { "@type": "ListItem", "position": 3, "name": "集合啦！动物森友会" },
+            { "@type": "ListItem", "position": 4, "name": "斯普拉遁 3" },
+            { "@type": "ListItem", "position": 5, "name": "火焰纹章 Engage" },
+            { "@type": "ListItem", "position": 6, "name": "超级马力欧 奥德赛" },
+            { "@type": "ListItem", "position": 7, "name": "马力欧赛车 8 豪华版" },
+            { "@type": "ListItem", "position": 8, "name": "任天堂明星大乱斗 特别版" },
+            { "@type": "ListItem", "position": 9, "name": "星之卡比 探索发现" },
+            { "@type": "ListItem", "position": 10, "name": "密特罗德 生存恐惧" },
+            { "@type": "ListItem", "position": 11, "name": "怪物猎人 Rise / Sunbreak" },
+            { "@type": "ListItem", "position": 12, "name": "异度神剑 3" },
+            { "@type": "ListItem", "position": 13, "name": "上古卷轴 5：天际" }
+          ]
+        }
+      ]
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">△</span>
+        <span>
+          <strong>Amiibo图鉴</strong>
+          <small>Switch amiibo 游戏查询</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#finder">查询</a>
+        <a href="#drops">掉落物</a>
+        <a href="#guide">使用说明</a>
+      </nav>
+      <button class="lang-switch" type="button" aria-label="语言切换">中 / EN</button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Switch amiibo rewards</p>
+          <h1>刷哪个 amiibo，一眼知道。</h1>
+          <p class="hero-copy">收录 13 款 Switch 热门游戏的 amiibo 支持信息，支持按游戏、角色、奖励筛选。从《王国之泪》到《动物森友会》，适合边玩边查。</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#finder">开始查询</a>
+            <a class="secondary-action" href="#guide">查看刷取规则</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt id="statTotal">0</dt><dd>amiibo 条目</dd></div>
+            <div><dt id="statSpecial">0</dt><dd>特殊奖励</dd></div>
+            <div><dt>13</dt><dd>支持游戏数</dd></div>
+            <div><dt>2026.05.15</dt><dd>数据核验日期</dd></div>
+          </dl>
+        </div>
+        <div class="hero-panel" aria-label="热门刷取目标">
+          <div class="hero-card">
+            <span>热门目标</span>
+            <strong>鬼神套装 / 艾波娜 / 黄昏之弓 / 滑翔伞布料</strong>
+          </div>
+          <div class="hero-card muted">
+            <span>第一版策略</span>
+            <strong>常见 / 稀有 / 特殊三档，不标注不可靠概率</strong>
+          </div>
+        </div>
+      </section>
+
+      <aside class="ad-slot ad-top" aria-label="广告位">
+        <span>广告位预留</span>
+        <strong>顶部横幅</strong>
+      </aside>
+
+      <section class="quick-links" aria-label="快捷入口">
+        <button type="button" data-quick="鬼神">鬼神套</button>
+        <button type="button" data-quick="艾波娜">艾波娜</button>
+        <button type="button" data-quick="黄昏之弓">黄昏之弓</button>
+        <button type="button" data-quick="布料">滑翔伞布料</button>
+        <button type="button" data-quick="神兽兵装">神兽兵装</button>
+      </section>
+
+      <section class="games-section" id="games">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Games</p>
+            <h2>热门 amiibo 游戏</h2>
+          </div>
+          <p id="currentGameInfo">点击游戏卡片切换当前游戏</p>
+        </div>
+        <div class="game-grid" id="gameGrid"></div>
+        <div class="game-detail-bar" id="gameDetailBar" style="display:none;">
+          <div class="game-detail-inner">
+            <strong id="gameDetailName"></strong>
+            <span id="gameDetailType"></span>
+            <span id="gameDetailConfidence"></span>
+            <a id="gameDetailSource" href="#" target="_blank" rel="noreferrer" style="display:none;">来源</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout" id="finder">
+        <aside class="filters" aria-label="筛选器">
+          <div class="filter-block">
+            <label for="searchInput">搜索 amiibo / 奖励 / 游戏</label>
+            <input id="searchInput" type="search" placeholder="例如：鬼神、希多、Epona、Splatoon 3、动物森友会">
+          </div>
+          <div class="filter-block">
+            <span>系列</span>
+            <div class="chip-group" id="seriesFilters"></div>
+          </div>
+          <div class="filter-block">
+            <span>推荐标签</span>
+            <div class="chip-group" id="tagFilters"></div>
+          </div>
+          <div class="filter-block">
+            <span>掉落等级</span>
+            <div class="chip-group">
+              <button class="chip" type="button" data-tier="special">特殊</button>
+              <button class="chip" type="button" data-tier="rare">稀有</button>
+              <button class="chip" type="button" data-tier="common">常见</button>
+            </div>
+          </div>
+          <button class="reset-button" id="resetFilters" type="button">重置筛选</button>
+        </aside>
+
+        <section class="results-area">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Finder</p>
+              <h2>amiibo 掉落查询</h2>
+            </div>
+            <p id="resultCount">正在载入...</p>
+          </div>
+          <div class="amiibo-grid" id="amiiboGrid"></div>
+        </section>
+      </section>
+
+      <aside class="ad-slot ad-mid" aria-label="广告位">
+        <span>广告位预留</span>
+        <strong>列表中部广告</strong>
+      </aside>
+
+      <section class="drops-section" id="drops">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reverse Lookup</p>
+            <h2>按奖励反查 amiibo</h2>
+          </div>
+          <p>点击一个奖励，自动筛出相关 amiibo。已覆盖多款游戏奖励。</p>
+        </div>
+        <div class="drop-index" id="dropIndex"></div>
+      </section>
+
+      <section class="guide" id="guide">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Guide</p>
+            <h2>amiibo 使用说明</h2>
+          </div>
+        </div>
+        <div class="guide-grid">
+          <article>
+            <h3>每天能刷几次？</h3>
+            <p>通常同一个 amiibo 每天可扫描一次。不同卡片或不同 amiibo 会分别计算，掉落是随机的。</p>
+          </article>
+          <article>
+            <h3>为什么没掉特殊奖励？</h3>
+            <p>特殊奖励不是必出。本页只标注“可能掉落”的目标，不承诺精确概率，想刷指定物品可以读档重试。</p>
+          </article>
+          <article>
+            <h3>非塞尔达 amiibo 有用吗？</h3>
+            <p>有用，但通常只给随机食材、材料或基础补给，不会掉塞尔达系列专属布料、套装或武器。</p>
+          </article>
+          <article>
+            <h3>本页数据怎么核验？</h3>
+            <p>优先参考 Nintendo 官方说明，并交叉核验 Game8、Nintendo Life、Gamer Guides、Thonky 等攻略来源。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="seo-info" id="seo-content">
+        <h2>Switch amiibo 游戏查询覆盖范围</h2>
+        <p>本图鉴收录了 13 款 Switch 热门游戏的 amiibo 支持信息，按优先级分为 P1（较完整数据）和 P2（代表性数据）两档。P1 包括王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage 和马力欧奥德赛，数据经过多来源交叉核验。P2 包括马力欧赛车 8、大乱斗、卡比探索发现、密特罗德、怪物猎人 Rise、异度神剑 3 和上古卷轴 5，以代表性条目为主，均标注了数据来源和置信度。</p>
+
+        <h3>王国之泪 amiibo 掉落查询说明</h3>
+        <p>王国之泪是本站数据最完整的板块，覆盖所有已发售的塞尔达系列 amiibo，以及任天堂明星大乱斗、30 周年、黄昏公主、梦见岛等系列的角色。每个 amiibo 的掉落分为特殊、稀有、常见三档。特殊奖励包括鬼神套装、黄昏勇者套装、滑翔伞布料等高价值物品；稀有奖励包括黄昏之弓、古代之刃等武器；常见奖励包括食材、矿石、基础武器等日常补给。掉落是随机的，本站不标注精确概率，想刷特定物品可以在扫描前存档。</p>
+
+        <h3>热门游戏 amiibo 用途对比</h3>
+        <p>不同游戏对 amiibo 的使用方式差别较大。王国之泪和旷野之息主要用来刷装备、布料和材料；动物森友会侧重邀请村民、获取家具和海报；Splatoon 3 主要是解锁装备套装和保存穿搭；火焰纹章 Engage 可以获得纹章士戒指和服装票；马力欧奥德赛以婚礼服装和月亮提示为主。并非所有 amiibo 都在每款游戏中有专属奖励，非对应系列的 amiibo 通常只给基础材料。</p>
+
+        <h3>后续会补哪些内容</h3>
+        <p>目前 P2 游戏的数据以代表性条目为主，后续会逐步补全每款游戏的完整 amiibo 支持列表。同时计划接入英文数据、补充更多游戏封面和 amiibo 图片，并在数据更新时同步核验来源。如果你发现数据有误或遗漏，欢迎反馈。</p>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>常见问题</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>哪些 Switch 游戏支持 amiibo？</summary>
+            <p>本图鉴覆盖 13 款 Switch 热门游戏，包括：王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage、马力欧奥德赛、马力欧赛车 8 豪华版、大乱斗 特别版、星之卡比 探索发现、密特罗德 生存恐惧、怪物猎人 Rise、异度神剑 3、上古卷轴 5：天际。</p>
+          </details>
+          <details class="faq-item">
+            <summary>王国之泪 amiibo 能刷什么？</summary>
+            <p>王国之泪 amiibo 可掉落滑翔伞布料（如鬼神布料、英杰服布料、黄昏之镜布料等）、武器（黄昏之弓、鬼神大剑等）、装备（鬼神套装、黄昏勇者套装等）和各种材料。不同 amiibo 掉落内容不同，本站可按角色或奖励名称查询。</p>
+          </details>
+          <details class="faq-item">
+            <summary>amiibo 每天能扫几次？</summary>
+            <p>通常同一个 amiibo 每天可在同一台主机/同一款游戏中扫描一次。不同 amiibo 卡片或不同 amiibo 会分别计算。如果想刷指定物品，可以在扫描前存档，不满意就读档重试。</p>
+          </details>
+          <details class="faq-item">
+            <summary>非塞尔达 amiibo 在王国之泪有用吗？</summary>
+            <p>有用，但用途有限。非塞尔达系列 amiibo（如马力欧、动物森友会等）在王国之泪中通常只掉落随机水果、蘑菇、肉类、鱼类等基础食材，不会掉落塞尔达系列专属的滑翔伞布料、套装或武器。</p>
+          </details>
+          <details class="faq-item">
+            <summary>动物森友会 amiibo 卡有什么用？</summary>
+            <p>动物森友会 amiibo 卡可以：1）召唤对应村民到露营地，连续三天邀请可搬入你的岛屿；2）在拍照模式（Photopia）中邀请拍照；3）NPC 卡可获得对应角色海报和主题家具；4）三丽鸥联动卡可解锁联动村民和主题家具套装。</p>
+          </details>
+          <details class="faq-item">
+            <summary>Splatoon 3 amiibo 奖励是什么？</summary>
+            <p>Splatoon 3 amiibo 奖励主要为：1）对应主题装备套装（如鱿鱼丝带套装、章鱼迷彩套装、Deep Cut 主题装备等）；2）保存和读取穿搭方案功能；3）偶像角色（鱿鱼姐妹、Off the Hook、Deep Cut）amiibo 有额外的舞台演出道具。</p>
+          </details>
+          <details class="faq-item">
+            <summary>这个网站的数据来源可靠吗？</summary>
+            <p>本站数据优先参考 Nintendo 官方说明，并交叉核验 Game8、Nintendo Life、Gamer Guides、Thonky、Nookipedia、Inkipedia、Serenes Forest 等权威攻略来源。王国之泪数据为高置信度，其他游戏数据标注了置信度等级。最后核验日期为 2026-05-15。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="sources">
+        <h2>数据来源</h2>
+        <p>最后核验日期：<span id="updatedAt">2026-05-13</span>。如果不同来源存在冲突，本页优先采用官方说明和更新较新的 TOTK 专门资料。</p>
+        <ul id="sourceList"></ul>
+      </section>
+
+      <aside class="ad-slot ad-bottom" aria-label="广告位">
+        <span>广告位预留</span>
+        <strong>底部横幅</strong>
+      </aside>
+    </main>
+
+    <dialog class="detail-dialog" id="detailDialog">
+      <button class="dialog-close" id="closeDialog" type="button" aria-label="关闭详情">×</button>
+      <div id="dialogBody"></div>
+    </dialog>
+
+    <footer class="site-footer">
+      <p>Amiibo图鉴是 Switch amiibo 玩家工具站，覆盖 13 款热门游戏。当前为静态本地版，后续可部署到 GitHub Pages、Cloudflare Pages 或国内服务器。</p>
+      <p>语言切换入口已预留；英文内容会在后续版本补齐。</p>
+    </footer>
+
+    <script src="data/amiibo-data.js"></script>
+    <script src="data/games-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

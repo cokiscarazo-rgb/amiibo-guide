@@ -1,0 +1,6 @@
+.playwright-mcp/
+output/
+CLAUDE_TASK*.md
+_*.mjs
+_*.sh
+*.log

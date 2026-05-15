@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE4E1"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="12" fill="url(#bg)"/>
+  
+    <circle cx="60" cy="50" r="18" fill="#F5DEB3"/>
+    <ellipse cx="60" cy="54" rx="14" ry="10" fill="#FFFACD"/>
+    <circle cx="54" cy="48" r="2.5" fill="#333"/>
+    <circle cx="66" cy="48" r="2.5" fill="#333"/>
+    <path d="M54 55 Q60 60 66 55" stroke="#333" stroke-width="1.5" fill="none"/>
+    <ellipse cx="54" cy="52" rx="4" ry="2" fill="#FFB6C1"/>
+    <ellipse cx="66" cy="52" rx="4" ry="2" fill="#FFB6C1"/>
+    <rect x="46" y="65" width="28" height="26" rx="4" fill="#DDA0DD"/>
+    <text x="60" y="81" text-anchor="middle" font-size="6" fill="#333">Squirrel</text>
+  <text x="60" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Marshal</text>
+</svg>

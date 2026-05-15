@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B4226"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="12" fill="url(#bg)"/>
+  
+    <ellipse cx="60" cy="48" rx="16" ry="20" fill="#4A3728"/>
+    <ellipse cx="60" cy="44" rx="12" ry="12" fill="#5C4033"/>
+    <circle cx="54" cy="42" r="3" fill="#FFD700"/>
+    <circle cx="66" cy="42" r="3" fill="#FFD700"/>
+    <polygon points="60,48 56,52 64,52" fill="#DAA520"/>
+    <rect x="48" y="60" width="24" height="30" rx="4" fill="#8B0000"/>
+    <text x="60" y="78" text-anchor="middle" font-size="6" fill="#FFD700">Cafe</text>
+    <circle cx="75" cy="90" r="8" fill="#F5F5DC" stroke="#8B4513" stroke-width="1"/>
+    <path d="M83 86 Q88 88 83 92" stroke="#8B4513" stroke-width="1" fill="none"/>
+  <text x="60" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Brewster</text>
+</svg>

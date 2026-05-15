@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4169E1"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="12" fill="url(#bg)"/>
+  
+    <circle cx="60" cy="48" r="18" fill="#FFDAB9"/>
+    <path d="M44 42 Q60 22 76 42" fill="#DAA520"/>
+    <circle cx="54" cy="44" r="2.5" fill="#4169E1"/>
+    <circle cx="66" cy="44" r="2.5" fill="#4169E1"/>
+    <path d="M56 50 Q60 54 64 50" stroke="#333" stroke-width="1" fill="none"/>
+    <rect x="44" y="62" width="32" height="28" rx="3" fill="#4169E1"/>
+    <rect x="30" y="50" width="3" height="35" fill="#C0C0C0"/>
+    <circle cx="31" cy="48" r="5" fill="#00CED1"/>
+    <text x="60" y="82" text-anchor="middle" font-size="5" fill="white">Monado</text>
+  <text x="60" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Shulk</text>
+</svg>

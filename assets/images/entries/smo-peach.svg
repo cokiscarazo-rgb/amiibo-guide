@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB6C1"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="12" fill="url(#bg)"/>
+  
+    <circle cx="60" cy="46" r="18" fill="#FFDAB9"/>
+    <path d="M44 38 Q60 20 76 38" fill="#FFD700"/>
+    <circle cx="54" cy="44" r="2.5" fill="#4169E1"/>
+    <circle cx="66" cy="44" r="2.5" fill="#4169E1"/>
+    <path d="M56 50 Q60 53 64 50" stroke="#FF69B4" stroke-width="1" fill="none"/>
+    <rect x="42" y="60" width="36" height="30" rx="6" fill="#FFB6C1"/>
+    <circle cx="60" cy="72" r="3" fill="#FFD700"/>
+    <text x="60" y="84" text-anchor="middle" font-size="6" fill="#C71585">Wedding</text>
+  <text x="60" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#555">Peach</text>
+</svg>
