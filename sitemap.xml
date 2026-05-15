@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 部署后请将 https://example.com 替换为正式域名 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://cokiscarazo-rgb.github.io/amiibo-guide/</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://example.com/#finder</loc>
+    <loc>https://cokiscarazo-rgb.github.io/amiibo-guide/#finder</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/#games</loc>
+    <loc>https://cokiscarazo-rgb.github.io/amiibo-guide/#games</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/#drops</loc>
+    <loc>https://cokiscarazo-rgb.github.io/amiibo-guide/#drops</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://example.com/#guide</loc>
+    <loc>https://cokiscarazo-rgb.github.io/amiibo-guide/#guide</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
