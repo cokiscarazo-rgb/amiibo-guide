@@ -18,7 +18,7 @@
     <meta name="twitter:image" content="https://amiibo-guide.pages.dev/assets/images/games/totk.svg">
     <link rel="canonical" href="https://amiibo-guide.pages.dev/">
     <link rel="icon" href="assets/images/ui/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260516-i18n6-img1">
     <script type="application/ld+json">
       [
         {
@@ -137,49 +137,51 @@
         <span class="brand-mark">△</span>
         <span>
           <strong>Amiibo图鉴</strong>
-          <small>Switch amiibo 游戏查询</small>
+          <small data-i18n="brandSub">Switch amiibo 游戏查询</small>
         </span>
       </a>
       <nav class="top-nav" aria-label="主导航">
-        <a href="#finder">查询</a>
-        <a href="#drops">掉落物</a>
-        <a href="#guide">使用说明</a>
+        <a href="#finder" data-i18n="navFinder">查询</a>
+        <a href="#drops" data-i18n="navDrops">掉落物</a>
+        <a href="#guide" data-i18n="navGuide">使用说明</a>
       </nav>
-      <button class="lang-switch" type="button" aria-label="语言切换">中 / EN</button>
+      <label class="language-select-wrap" aria-label="语言切换">
+        <select id="languageSelect" class="language-select"></select>
+      </label>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-content">
-          <p class="eyebrow">Switch amiibo rewards</p>
-          <h1>刷哪个 amiibo，一眼知道。</h1>
-          <p class="hero-copy">收录 13 款 Switch 热门游戏的 amiibo 支持信息，支持按游戏、角色、奖励筛选。从《王国之泪》到《动物森友会》，适合边玩边查。</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">Switch amiibo rewards</p>
+          <h1 data-i18n="heroTitle">刷哪个 amiibo，一眼知道。</h1>
+          <p class="hero-copy" data-i18n="heroCopy">收录 13 款 Switch 热门游戏的 amiibo 支持信息，支持按游戏、角色、奖励筛选。从《王国之泪》到《动物森友会》，适合边玩边查。</p>
           <div class="hero-actions">
-            <a class="primary-action" href="#finder">开始查询</a>
-            <a class="secondary-action" href="#guide">查看刷取规则</a>
+            <a class="primary-action" href="#finder" data-i18n="start">开始查询</a>
+            <a class="secondary-action" href="#guide" data-i18n="rules">查看刷取规则</a>
           </div>
           <dl class="hero-stats">
-            <div><dt id="statTotal">0</dt><dd>amiibo 条目</dd></div>
-            <div><dt id="statSpecial">0</dt><dd>特殊奖励</dd></div>
-            <div><dt>13</dt><dd>支持游戏数</dd></div>
-            <div><dt>2026.05.15</dt><dd>数据核验日期</dd></div>
+            <div><dt id="statTotal">0</dt><dd data-i18n="statEntries">amiibo 条目</dd></div>
+            <div><dt id="statSpecial">0</dt><dd data-i18n="statSpecial">特殊奖励</dd></div>
+            <div><dt>13</dt><dd data-i18n="statGames">支持游戏数</dd></div>
+            <div><dt>2026.05.15</dt><dd data-i18n="statUpdated">数据核验日期</dd></div>
           </dl>
         </div>
         <div class="hero-panel" aria-label="热门刷取目标">
           <div class="hero-card">
-            <span>热门目标</span>
-            <strong>鬼神套装 / 艾波娜 / 黄昏之弓 / 滑翔伞布料</strong>
+            <span data-i18n="hotTargets">热门目标</span>
+            <strong data-i18n="hotTargetsText">鬼神套装 / 艾波娜 / 黄昏之弓 / 滑翔伞布料</strong>
           </div>
           <div class="hero-card muted">
-            <span>第一版策略</span>
-            <strong>常见 / 稀有 / 特殊三档，不标注不可靠概率</strong>
+            <span data-i18n="firstStrategy">第一版策略</span>
+            <strong data-i18n="firstStrategyText">常见 / 稀有 / 特殊三档，不标注不可靠概率</strong>
           </div>
         </div>
       </section>
 
       <aside class="ad-slot ad-top" aria-label="广告位">
-        <span>广告位预留</span>
-        <strong>顶部横幅</strong>
+        <span data-i18n="adReserved">广告位预留</span>
+        <strong data-i18n="adTop">顶部横幅</strong>
       </aside>
 
       <section class="quick-links" aria-label="快捷入口">
@@ -194,9 +196,9 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Games</p>
-            <h2>热门 amiibo 游戏</h2>
+            <h2 data-i18n="gamesTitle">热门 amiibo 游戏</h2>
           </div>
-          <p id="currentGameInfo">点击游戏卡片切换当前游戏</p>
+          <p id="currentGameInfo" data-i18n="currentHint">点击游戏卡片切换当前游戏</p>
         </div>
         <div class="game-grid" id="gameGrid"></div>
         <div class="game-detail-bar" id="gameDetailBar" style="display:none;">
@@ -212,52 +214,52 @@
       <section class="layout" id="finder">
         <aside class="filters" aria-label="筛选器">
           <div class="filter-block">
-            <label for="searchInput">搜索 amiibo / 奖励 / 游戏</label>
+            <label for="searchInput" data-i18n="searchLabel">搜索 amiibo / 奖励 / 游戏</label>
             <input id="searchInput" type="search" placeholder="例如：鬼神、希多、Epona、Splatoon 3、动物森友会">
           </div>
           <div class="filter-block">
-            <span>系列</span>
+            <span data-i18n="series">系列</span>
             <div class="chip-group" id="seriesFilters"></div>
           </div>
           <div class="filter-block">
-            <span>推荐标签</span>
+            <span data-i18n="tags">推荐标签</span>
             <div class="chip-group" id="tagFilters"></div>
           </div>
           <div class="filter-block">
-            <span>掉落等级</span>
+            <span data-i18n="tier">掉落等级</span>
             <div class="chip-group">
-              <button class="chip" type="button" data-tier="special">特殊</button>
-              <button class="chip" type="button" data-tier="rare">稀有</button>
-              <button class="chip" type="button" data-tier="common">常见</button>
+              <button class="chip" type="button" data-tier="special" data-i18n="special">特殊</button>
+              <button class="chip" type="button" data-tier="rare" data-i18n="rare">稀有</button>
+              <button class="chip" type="button" data-tier="common" data-i18n="common">常见</button>
             </div>
           </div>
-          <button class="reset-button" id="resetFilters" type="button">重置筛选</button>
+          <button class="reset-button" id="resetFilters" type="button" data-i18n="reset">重置筛选</button>
         </aside>
 
         <section class="results-area">
           <div class="section-heading">
             <div>
               <p class="eyebrow">Finder</p>
-              <h2>amiibo 掉落查询</h2>
+              <h2 data-i18n="finderTitle">amiibo 掉落查询</h2>
             </div>
-            <p id="resultCount">正在载入...</p>
+            <p id="resultCount" data-i18n="loading">正在载入...</p>
           </div>
           <div class="amiibo-grid" id="amiiboGrid"></div>
         </section>
       </section>
 
       <aside class="ad-slot ad-mid" aria-label="广告位">
-        <span>广告位预留</span>
-        <strong>列表中部广告</strong>
+        <span data-i18n="adReserved">广告位预留</span>
+        <strong data-i18n="adMid">列表中部广告</strong>
       </aside>
 
       <section class="drops-section" id="drops">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Reverse Lookup</p>
-            <h2>按奖励反查 amiibo</h2>
+            <h2 data-i18n="dropsTitle">按奖励反查 amiibo</h2>
           </div>
-          <p>点击一个奖励，自动筛出相关 amiibo。已覆盖多款游戏奖励。</p>
+          <p data-i18n="dropsCopy">点击一个奖励，自动筛出相关 amiibo。已覆盖多款游戏奖励。</p>
         </div>
         <div class="drop-index" id="dropIndex"></div>
       </section>
@@ -266,41 +268,41 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Guide</p>
-            <h2>amiibo 使用说明</h2>
+            <h2 data-i18n="guideTitle">amiibo 使用说明</h2>
           </div>
         </div>
         <div class="guide-grid">
           <article>
-            <h3>每天能刷几次？</h3>
-            <p>通常同一个 amiibo 每天可扫描一次。不同卡片或不同 amiibo 会分别计算，掉落是随机的。</p>
+            <h3 data-i18n="guideCard1Title">每天能刷几次？</h3>
+            <p data-i18n="guideCard1Text">通常同一个 amiibo 每天可扫描一次。不同卡片或不同 amiibo 会分别计算，掉落是随机的。</p>
           </article>
           <article>
-            <h3>为什么没掉特殊奖励？</h3>
-            <p>特殊奖励不是必出。本页只标注“可能掉落”的目标，不承诺精确概率，想刷指定物品可以读档重试。</p>
+            <h3 data-i18n="guideCard2Title">为什么没掉特殊奖励？</h3>
+            <p data-i18n="guideCard2Text">特殊奖励不是必出。本页只标注“可能掉落”的目标，不承诺精确概率，想刷指定物品可以读档重试。</p>
           </article>
           <article>
-            <h3>非塞尔达 amiibo 有用吗？</h3>
-            <p>有用，但通常只给随机食材、材料或基础补给，不会掉塞尔达系列专属布料、套装或武器。</p>
+            <h3 data-i18n="guideCard3Title">非塞尔达 amiibo 有用吗？</h3>
+            <p data-i18n="guideCard3Text">有用，但通常只给随机食材、材料或基础补给，不会掉塞尔达系列专属布料、套装或武器。</p>
           </article>
           <article>
-            <h3>本页数据怎么核验？</h3>
-            <p>优先参考 Nintendo 官方说明，并交叉核验 Game8、Nintendo Life、Gamer Guides、Thonky 等攻略来源。</p>
+            <h3 data-i18n="guideCard4Title">本页数据怎么核验？</h3>
+            <p data-i18n="guideCard4Text">优先参考 Nintendo 官方说明，并交叉核验 Game8、Nintendo Life、Gamer Guides、Thonky 等攻略来源。</p>
           </article>
         </div>
       </section>
 
       <section class="seo-info" id="seo-content">
-        <h2>Switch amiibo 游戏查询覆盖范围</h2>
-        <p>本图鉴收录了 13 款 Switch 热门游戏的 amiibo 支持信息，按优先级分为 P1（较完整数据）和 P2（代表性数据）两档。P1 包括王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage 和马力欧奥德赛，数据经过多来源交叉核验。P2 包括马力欧赛车 8、大乱斗、卡比探索发现、密特罗德、怪物猎人 Rise、异度神剑 3 和上古卷轴 5，以代表性条目为主，均标注了数据来源和置信度。</p>
+        <h2 data-i18n="seoInfoTitle">Switch amiibo 游戏查询覆盖范围</h2>
+        <p data-i18n="seoInfoText">本图鉴收录了 13 款 Switch 热门游戏的 amiibo 支持信息，按优先级分为 P1（较完整数据）和 P2（代表性数据）两档。P1 包括王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage 和马力欧奥德赛，数据经过多来源交叉核验。P2 包括马力欧赛车 8、大乱斗、卡比探索发现、密特罗德、怪物猎人 Rise、异度神剑 3 和上古卷轴 5，以代表性条目为主，均标注了数据来源和置信度。</p>
 
-        <h3>王国之泪 amiibo 掉落查询说明</h3>
-        <p>王国之泪是本站数据最完整的板块，覆盖所有已发售的塞尔达系列 amiibo，以及任天堂明星大乱斗、30 周年、黄昏公主、梦见岛等系列的角色。每个 amiibo 的掉落分为特殊、稀有、常见三档。特殊奖励包括鬼神套装、黄昏勇者套装、滑翔伞布料等高价值物品；稀有奖励包括黄昏之弓、古代之刃等武器；常见奖励包括食材、矿石、基础武器等日常补给。掉落是随机的，本站不标注精确概率，想刷特定物品可以在扫描前存档。</p>
+        <h3 data-i18n="seoTotkTitle">王国之泪 amiibo 掉落查询说明</h3>
+        <p data-i18n="seoTotkText">王国之泪是本站数据最完整的板块，覆盖所有已发售的塞尔达系列 amiibo，以及任天堂明星大乱斗、30 周年、黄昏公主、梦见岛等系列的角色。每个 amiibo 的掉落分为特殊、稀有、常见三档。特殊奖励包括鬼神套装、黄昏勇者套装、滑翔伞布料等高价值物品；稀有奖励包括黄昏之弓、古代之刃等武器；常见奖励包括食材、矿石、基础武器等日常补给。掉落是随机的，本站不标注精确概率，想刷特定物品可以在扫描前存档。</p>
 
-        <h3>热门游戏 amiibo 用途对比</h3>
-        <p>不同游戏对 amiibo 的使用方式差别较大。王国之泪和旷野之息主要用来刷装备、布料和材料；动物森友会侧重邀请村民、获取家具和海报；Splatoon 3 主要是解锁装备套装和保存穿搭；火焰纹章 Engage 可以获得纹章士戒指和服装票；马力欧奥德赛以婚礼服装和月亮提示为主。并非所有 amiibo 都在每款游戏中有专属奖励，非对应系列的 amiibo 通常只给基础材料。</p>
+        <h3 data-i18n="seoCompareTitle">热门游戏 amiibo 用途对比</h3>
+        <p data-i18n="seoCompareText">不同游戏对 amiibo 的使用方式差别较大。王国之泪和旷野之息主要用来刷装备、布料和材料；动物森友会侧重邀请村民、获取家具和海报；Splatoon 3 主要是解锁装备套装和保存穿搭；火焰纹章 Engage 可以获得纹章士戒指和服装票；马力欧奥德赛以婚礼服装和月亮提示为主。并非所有 amiibo 都在每款游戏中有专属奖励，非对应系列的 amiibo 通常只给基础材料。</p>
 
-        <h3>后续会补哪些内容</h3>
-        <p>目前 P2 游戏的数据以代表性条目为主，后续会逐步补全每款游戏的完整 amiibo 支持列表。同时计划接入英文数据、补充更多游戏封面和 amiibo 图片，并在数据更新时同步核验来源。如果你发现数据有误或遗漏，欢迎反馈。</p>
+        <h3 data-i18n="seoNextTitle">后续会补哪些内容</h3>
+        <p data-i18n="seoNextText">目前 P2 游戏的数据以代表性条目为主，后续会逐步补全每款游戏的完整 amiibo 支持列表。同时计划接入英文数据、补充更多游戏封面和 amiibo 图片，并在数据更新时同步核验来源。如果你发现数据有误或遗漏，欢迎反馈。</p>
       </section>
 
       <section class="faq-section" id="faq">
@@ -312,16 +314,16 @@
         </div>
         <div class="faq-list">
           <details class="faq-item">
-            <summary>哪些 Switch 游戏支持 amiibo？</summary>
-            <p>本图鉴覆盖 13 款 Switch 热门游戏，包括：王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage、马力欧奥德赛、马力欧赛车 8 豪华版、大乱斗 特别版、星之卡比 探索发现、密特罗德 生存恐惧、怪物猎人 Rise、异度神剑 3、上古卷轴 5：天际。</p>
+            <summary data-i18n="faq1Q">哪些 Switch 游戏支持 amiibo？</summary>
+            <p data-i18n="faq1A">本图鉴覆盖 13 款 Switch 热门游戏，包括：王国之泪、旷野之息、动物森友会、Splatoon 3、火焰纹章 Engage、马力欧奥德赛、马力欧赛车 8 豪华版、大乱斗 特别版、星之卡比 探索发现、密特罗德 生存恐惧、怪物猎人 Rise、异度神剑 3、上古卷轴 5：天际。</p>
           </details>
           <details class="faq-item">
-            <summary>王国之泪 amiibo 能刷什么？</summary>
-            <p>王国之泪 amiibo 可掉落滑翔伞布料（如鬼神布料、英杰服布料、黄昏之镜布料等）、武器（黄昏之弓、鬼神大剑等）、装备（鬼神套装、黄昏勇者套装等）和各种材料。不同 amiibo 掉落内容不同，本站可按角色或奖励名称查询。</p>
+            <summary data-i18n="faq2Q">王国之泪 amiibo 能刷什么？</summary>
+            <p data-i18n="faq2A">王国之泪 amiibo 可掉落滑翔伞布料（如鬼神布料、英杰服布料、黄昏之镜布料等）、武器（黄昏之弓、鬼神大剑等）、装备（鬼神套装、黄昏勇者套装等）和各种材料。不同 amiibo 掉落内容不同，本站可按角色或奖励名称查询。</p>
           </details>
           <details class="faq-item">
-            <summary>amiibo 每天能扫几次？</summary>
-            <p>通常同一个 amiibo 每天可在同一台主机/同一款游戏中扫描一次。不同 amiibo 卡片或不同 amiibo 会分别计算。如果想刷指定物品，可以在扫描前存档，不满意就读档重试。</p>
+            <summary data-i18n="faq3Q">amiibo 每天能扫几次？</summary>
+            <p data-i18n="faq3A">通常同一个 amiibo 每天可在同一台主机/同一款游戏中扫描一次。不同 amiibo 卡片或不同 amiibo 会分别计算。如果想刷指定物品，可以在扫描前存档，不满意就读档重试。</p>
           </details>
           <details class="faq-item">
             <summary>非塞尔达 amiibo 在王国之泪有用吗？</summary>
@@ -343,14 +345,14 @@
       </section>
 
       <section class="sources">
-        <h2>数据来源</h2>
-        <p>最后核验日期：<span id="updatedAt">2026-05-13</span>。如果不同来源存在冲突，本页优先采用官方说明和更新较新的 TOTK 专门资料。</p>
+        <h2 data-i18n="sourceTitle">数据来源</h2>
+        <p id="sourceCopy">最后核验日期：<span id="updatedAt">2026-05-13</span>。如果不同来源存在冲突，本页优先采用官方说明和更新较新的 TOTK 专门资料。</p>
         <ul id="sourceList"></ul>
       </section>
 
       <aside class="ad-slot ad-bottom" aria-label="广告位">
-        <span>广告位预留</span>
-        <strong>底部横幅</strong>
+        <span data-i18n="adReserved">广告位预留</span>
+        <strong data-i18n="adBottom">底部横幅</strong>
       </aside>
     </main>
 
@@ -360,12 +362,13 @@
     </dialog>
 
     <footer class="site-footer">
-      <p>Amiibo图鉴是 Switch amiibo 玩家工具站，覆盖 13 款热门游戏。当前为静态本地版，后续可部署到 GitHub Pages、Cloudflare Pages 或国内服务器。</p>
-      <p>语言切换入口已预留；英文内容会在后续版本补齐。</p>
+      <p data-i18n="footer1">Amiibo图鉴是 Switch amiibo 玩家工具站，覆盖 13 款热门游戏。</p>
+      <p data-i18n="footer2">已支持自动语言匹配；具体掉落物名称会逐步补充多语言数据。</p>
     </footer>
 
     <script src="data/amiibo-data.js"></script>
     <script src="data/games-data.js"></script>
-    <script src="app.js"></script>
+    <script src="data/i18n-data.js?v=20260516-i18n6-img1"></script>
+    <script src="app.js?v=20260516-i18n6-img1"></script>
   </body>
 </html>

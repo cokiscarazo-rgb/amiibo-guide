@@ -37,7 +37,8 @@ a {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -95,7 +96,7 @@ input {
   color: var(--teal);
 }
 
-.lang-switch,
+.language-select,
 .reset-button,
 .chip,
 .quick-links button,
@@ -107,9 +108,20 @@ input {
   cursor: pointer;
 }
 
-.lang-switch {
-  min-width: 76px;
+.language-select-wrap {
+  flex: 0 0 auto;
+}
+
+.language-select {
+  min-width: 118px;
   padding: 8px 12px;
+  border-radius: 0;
+  appearance: auto;
+}
+
+.language-select option {
+  color: #102327;
+  background: #f4efd9;
 }
 
 main {
@@ -853,6 +865,12 @@ h3 {
 
   .brand small,
   .top-nav {
+    font-size: 12px;
+  }
+
+  .language-select {
+    max-width: 132px;
+    padding: 7px 8px;
     font-size: 12px;
   }
 
